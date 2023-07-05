@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    /* list-style: none; */
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --text_color:rgb(19, 18, 18);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:linear-gradient(45deg,rgba(6, 87, 238, 0.747),rgba(157, 12, 224, 0.671)) ;
+}
+.container{
+background-color: rgba(255, 255, 255, 0.884);
+max-width: 40rem;
+width: 100%;
+min-height: 42rem;
+border-radius: 1rem;
+padding: 1rem;
+}
+.search_city{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 4rem;
+    background-color: white;
+    border-radius: .5rem;
+   
+}
+.search_city input{
+    outline: none;
+    border: transparent;
+    width: 100%;
+    background-color: transparent;
+    padding: 0 .8rem;
+}
+.search_city i{
+    font-size: 1.7rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    background-color: rgb(11, 158, 243);
+    color: white;
+    padding: .5rem;
+    border-radius: 50%;
+}
+.weather_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+margin-top: 4rem;
+}
+.weather_image img{
+    width: 15rem;
+    height: 15rem;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+}
+.city{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#city{
+    font-weight: 600;
+    color: var(--text_color);
+    margin-right:1rem ;
+    text-transform: uppercase;
+}
+#temp{
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--text_color);
+}
+.extra_detail{
+    display: flex;
+
+background-color: rgb(253, 253, 253);
+border-radius: .5rem;
+margin-top: 3rem;
+justify-content: center;
+}
+.extra_detail ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 1rem 2rem;
+    place-items: center;
+    list-style: circle ;
+    gap: 1rem;
+
+
+}
+.extra_detail ul li{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    margin-bottom: 0.4rem;
+    color: var(--text_color);
+    font-weight: 500;
+   background-color: rgb(236, 236, 236);
+   height: 4rem;
+   padding: 0  1rem;
+   border-radius: .4rem;
+   width: 15rem !important;
+   width: 100%;
+   transition: all .3s linear;
+}
+.extra_detail ul li span{
+    color: rgb(11, 158, 243);
+    margin-left: 0.5rem;
+}

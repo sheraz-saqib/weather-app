@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+
+        <div class="search_city"><input id="getCity" type="text" placeholder="search the city name"><i class='bx bx-search'></i></div>
+        <div class="weather_image">
+            <img id="img" src="./img/images.jpg" alt="">
+        </div>
+        <div class="city"><h2 id="city">Karachi</h2> <h2 id="temp">-- </h2></div>
+        <!-- <div class="temp"></div> -->
+<div class="extra_detail">
+    <ul>
+        <div class="left">
+        <li id="#">feels like <span  id="feels_like">--</span></li>
+        <li id="#">humidity <span id="humidity">--</span></li>
+        <li id="#">max temp <span id="max_temp">--</span></li>
+        <li id="#">min temp <span id="min_temp">--</span></li>
+    </div>
+    <div class="right">
+        <li id="#">sunrise <span id="sunrise">--</span></li>
+        <li id="#">sunset <span id="sunset">--</span></li>
+        <li id="#">wind speed <span id="wind_speed">--</span></li>
+        <li id="#">cloud pct<span id="cloud_pct">--</span></li>
+    </div>
+    </ul>
+</div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
